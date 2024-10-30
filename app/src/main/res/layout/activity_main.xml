@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- First amount input and currency selection -->
+    <EditText
+        android:id="@+id/editTextAmount1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="0"
+        android:textSize="24sp"
+        android:gravity="center" />
+
+    <Spinner
+        android:id="@+id/spinnerCurrency1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Second amount input and currency selection -->
+    <EditText
+        android:id="@+id/editTextAmount2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="0"
+        android:textSize="24sp"
+        android:gravity="center" />
+
+    <Spinner
+        android:id="@+id/spinnerCurrency2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Conversion rate display -->
+    <TextView
+        android:id="@+id/textViewRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="1 CNY = 0.1404 USD"
+        android:textSize="14sp"
+        android:paddingTop="8dp" />
+
+</LinearLayout>
